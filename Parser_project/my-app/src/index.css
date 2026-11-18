@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+
+/* Reset only for elements that need it */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+background: linear-gradient(90deg, #EBF4F5, #EBF4F5);
+}
+
+/* Remove default list styles globally */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Remove default button styles */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Consistent box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+} 
+.box {
+  /* bg-[#f6f8fa]/80 -> Background color with 80% opacity (0.8) */
+  background-color: rgba(246, 248, 250, 0.8);
+
+  /* backdrop-blur-md -> Glassmorphism blur effect */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* Safari / Mobile support ke liye */
+
+  /* border-b border-[#8A2BE2] -> Sirf bottom par solid purple border */
+  border-bottom: 1px solid #8A2BE2;
+}
+.box2{
+  background-color: #0d1117;
+  border-bottom: 2px solid  #30363d;
+}
+.navbar {
+  position: relative;
+}
+.navbar::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 2px;
+  background: #8A2BE2;
+  transition: 0.3s; /* Ye line ko smooth chalaye ga */
+}
+.navbar:hover::after {
+  width: 100%; /* Line left se right nikal ayegi */
+}
+.moon{
+
+  transition: all 0.6s  cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.moon:hover{
+  transform: rotate(360deg);
+}
+.sun{
+
+  transition: all 0.6s  cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.sun:hover{
+  transform: rotate(360deg);
+}
+/* Jab dark mode ho */
+.markdown-body  .dark-preview {
+    color-scheme: dark;
+}
+/* Fix for Markdown Lists (Tailwind reset override) */
+.markdown-body ul {
+  list-style-type: disc !important;
+  padding-left: 1.5em !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
+
+.markdown-body ol {
+  list-style-type: decimal !important;
+  padding-left: 1.5em !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
+
+.markdown-body li {
+  margin-top: 0.25em !important;
+  margin-bottom: 0.25em !important;
+}
+
+/* Nested lists (Item 3a, 3b) */
+.markdown-body ul ul {
+  list-style-type: circle !important;
+}
+.markdown-body ul ul ul {
+  list-style-type: square !important;
+}
