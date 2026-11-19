@@ -42,14 +42,14 @@ function About({ dark }) {
             dark ? 'text-[#8b949e]' : 'text-[#656d76]'
           }`}>
             As a developer and AI Eng student constantly learning AI/ML and other tech related things, I write and make a lot of notes and documentations. My workflow was exhausting: write Markdown in a basic text editor or vscode, 
-            push to GitHub, and open the browser just to see if my headings, tables, and code blocks actually looked good and correct. My notes are 
-            looking good or understable or not. 
+            push to GitHub, and open the browser just to see if my headings, tables, and code blocks actually looked good and correct. My notes looked clean and understandable
           </p>
           <p className={`text-lg leading-relaxed mt-4 ${
             dark ? 'text-[#8b949e]' : 'text-[#656d76]'
           }`}>
             I was tired of switching tabs. I wanted to see the <strong className={dark ? 'text-[#c9d1d9]' : 'text-[#1f2328]'}>visual representation</strong> of my code while writing it, without relying on external servers.
           </p>
+          
         </div>
 
         {/* Side Card 1 */}
@@ -95,7 +95,7 @@ function About({ dark }) {
           <blockquote className={`relative z-10 text-2xl font-medium italic ${dark ? 'text-[#f0f6fc]' : 'text-[#1f2328]'}`}>
             "When you need a tool, build it yourself. You'll learn more than just writing code."
           </blockquote>
-          <p className={`relative z-10 mt-4 ${dark ? 'text-[#8b949e]' : 'text-[#656d76]'}`}>— The Developer</p>
+          <p className={`relative z-10 mt-4 ${dark ? 'text-[#8b949e]' : 'text-[#656d76]'}`}>— The Developer-Umar Khan</p>
         </div>
 
       </div>
