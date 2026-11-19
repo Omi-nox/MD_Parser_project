@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://md-parser-studio.vercel.app/sitemap.xml
