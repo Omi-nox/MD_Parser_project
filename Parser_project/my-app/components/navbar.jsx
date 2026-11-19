@@ -116,16 +116,28 @@ export default function Navbar({dark,set_dark}) {
             </div>
             <div className="max-w-7xl mx-auto px-5 py-5 flex items-center justify-between md:hidden   relative ">
                 <div className="flex gap-10">
-                 <span className="text-xl  text-[#656d76 ] sm:text-2xl">
-                    MD PARSER
+                        <span className="flex item-center justify-center gap-2 text-xl  text-[#656d76 ]">
+                   <span><img
+  src="/favicon.svg"
+  alt="MD Parser"
+  width="32"
+  height="42"
+/>  </span>
+                  
+                    <span className="text-xl mt-1 text-[#656d76 ] sm:text-2xl">
+            
+           MD STUDIO     
                 </span>
-                    <span><BsGithub className="text-2xl  text-[#656d76 ] " /></span>        
+                </span>
+                 
+                    <span><BsGithub className="text-2xl mt-1 text-[#656d76 ] " /></span>        
                  <button onClick={togglebtn}>
                        
                             {dark?(
                                 <FiSun className="sun mt-1 text-lg  sm:text-xl text-[#656d76 ]"></FiSun>
                             ):(
-                                <FaRegMoon className="moon mt-1 text-lg  sm:text-xl text-[#656d76 ] " />   
+                                <FaRegMoon className="moon 
+                                 text-lg  sm:text-xl text-[#656d76 ] " />   
                             )
                         
                             }
