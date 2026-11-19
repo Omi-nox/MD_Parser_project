@@ -30,7 +30,7 @@ export default function App() {
   return (
     <BrowserRouter>
             <Navbar dark={dark} set_dark={set_dark} />
-            /* <main className={`pt-11
+             <main className={`pt-11
                  ${dark &&('bg-[#161b22]')}`}> {/* Navbar ke peeche content chupne se bachane ke liye */}
                 <Routes>
                     <Route path="/" element={<>
